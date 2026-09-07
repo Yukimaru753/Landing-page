@@ -92,9 +92,9 @@
 /* information全体の書式 */
 .information {
   background-color: white;
-  padding-right: 200px;
-  padding-left: 200px;
-  padding-bottom: 62px;
+  padding-right: 284px;
+  padding-left: 284px;
+  padding-bottom: 100px;
 }
 
 /* information-titleの書式 */
@@ -104,6 +104,7 @@
   font-weight: 900;
   text-align: center;
   margin: 28px;
+  padding-bottom: 18px;
 }
 
 /* information-imageの書式 */
@@ -126,4 +127,37 @@
   justify-content: space-between;
   /* 狭い画面になったときに入らない Flex Itemを次の行へ送る */
   flex-wrap: wrap;
+}
+
+/* ------------------------------------------- */
+/* quote section */
+
+/* quote section全体の書式 */
+.quote {
+  background-color: #e5e7eb;
+  padding-top: 100px;
+  padding-right: 274px;
+  padding-left: 300px;
+  padding-bottom: 80px;
+}
+
+/* quote-textの書式 */
+.quote-text {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 300;
+  margin: 12px;
+  line-height: 46px;
+  /* 行の高さを46pxにして、行間を10pxに狭める */
+}
+
+/* quote-authorの書式 */
+.quote-author {
+  font-size: 22px;
+  color: #1f2937;
+  /* <strong>はfont-weight:boldと同義なので不要 */
+  /* font-weight: 400; */
+  /* justify-content: flex-end;を使わずとも文字は右に寄せられる */
+  text-align: right;
+  padding-right:30px;
 }
