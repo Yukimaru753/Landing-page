@@ -3,11 +3,22 @@
   font-family: Roboto, sans-serif;
 }
 
-.header-top {
-    display: flex;
-    
+/* header全体の書式 */
+.header {
+  background-color: #1f2937;
+  padding-top: 15px;
+  padding-right: 120px;
+  padding-left: 120px;
+  padding-bottom: 80px;
 }
 
+/* logo,linkの親 */
+.header-top { 
+  display: flex;
+  gap:15px;
+}
+
+/* logoの書式 */
 .header-logo {
   font-size: 24px;
   font-weight: 600;
@@ -15,6 +26,7 @@
   margin-right: auto;
 }
 
+/* linkの書式 */
 .header-link {
   text-decoration: none;
   /* delete underline */
@@ -22,16 +34,22 @@
   color: #e5e7eb;
 }
 
-/* header-topのflexbox */
-.header {
+/* header-main-textsとimageの親 */
+.header-main {
   display: flex;
-  background-color: #1f2937;
-  padding-top: 15px;
-  padding-right: 120px;
-  padding-left: 120px;
-  flex-wrap:wrap;
+  padding-top:80px;
+  justify-content: space-between;
 }
 
+/* header-main-textsの書式 */
+.header-main-texts {
+  width:400px;
+  /* 横幅を設定することで余白を生み、justify-contentがうまく動作するようにする */
+  /* header-main-textsはFlex Itemになっていて、
+  width:auto / flex-basis:autoなどによって中身を基準にサイズが決まっているので余白が埋まってしまうことがある */
+}
+
+/* header-main-textsの見出しの書式 */
 .header-main-title {
   font-size: 48px;
   color: #f9faf8;
@@ -39,6 +57,7 @@
   margin: 0;
 }
 
+/* header-main-textsの文章の書式 */
 .header-main-subtext {
   font-size: 18px;
   color: #e5e7eb;
@@ -46,6 +65,7 @@
   margin-bottom: 15px;
 }
 
+/* buttonの書式 */
 .header-main-button {
   background-color: #3882f6;
   color: #f9faf8;
@@ -57,7 +77,9 @@
   border-radius: 5px;
 }
 
+/* imageの書式 */
 .header-main-image {
-  width: 400px;
+  width: 550px;
+  height: 300px;
 }
 
