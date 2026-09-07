@@ -161,3 +161,55 @@
   text-align: right;
   padding-right:30px;
 }
+
+/* ------------------------------------------- */
+/* call to action section */
+
+/* call to action section全体の書式 */
+.call {
+  padding-top:90px;
+  padding-right:160px;
+  padding-bottom:90px;
+  padding-left:160px;
+  margin: 0;
+}
+
+/* call-textsとcall-buttonの親 */
+.call-main {
+  display: flex;
+  background-color: #3882F6;
+  border-radius: 8px;
+  padding-top:40px;
+  padding-right:100px;
+  padding-bottom: 40px;
+  padding-left:100px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* call-text-titleの書式 */
+.call-text-title {
+  color:white;
+  margin:0;
+  font-size:22px;
+}
+
+/* call-text-mainの書式 */
+.call-text-main {
+  color:white;
+  margin:0;
+}
+
+/* call-buttonの書式 */
+.call-button {
+  background-color: #3882F6;
+  border:2px solid white;
+  color:white;
+  border-radius:8px;
+  width:126px;
+  height:36px;
+  font-size:16px;
+  font-weight: 600;
+  padding:0;
+}
