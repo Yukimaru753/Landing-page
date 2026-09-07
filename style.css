@@ -3,6 +3,11 @@
   font-family: Roboto, sans-serif;
 }
 
+.header-top {
+    display: flex;
+    
+}
+
 .header-logo {
   font-size: 24px;
   font-weight: 600;
@@ -15,17 +20,16 @@
   /* delete underline */
   font-size: 18px;
   color: #e5e7eb;
-  margin-left: 25px;
 }
 
 /* header-topのflexbox */
-.header-top {
+.header {
   display: flex;
   background-color: #1f2937;
   padding-top: 15px;
   padding-right: 120px;
   padding-left: 120px;
-  align-items: center;
+  flex-wrap:wrap;
 }
 
 .header-main-title {
@@ -57,13 +61,3 @@
   width: 400px;
 }
 
-/* header-mainのflexbox */
-.header-main {
-  display: flex;
-  flex: 1;
-  background-color: #1f2937;
-  padding-right: 120px;
-  padding-left: 120px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
