@@ -45,11 +45,12 @@
 .header-main-button {
   background-color: #3882f6;
   color: #f9faf8;
-  border: 0;
+  border:0;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 2px;
   padding-bottom: 2px;
+  border-radius: 5px;
 }
 
 .header-main-image {
