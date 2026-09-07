@@ -3,6 +3,9 @@
   font-family: Roboto, sans-serif;
 }
 
+/* ------------------------------------------- */
+/* header section */
+
 /* header全体の書式 */
 .header {
   background-color: #1f2937;
@@ -13,9 +16,9 @@
 }
 
 /* logo,linkの親 */
-.header-top { 
+.header-top {
   display: flex;
-  gap:15px;
+  gap: 15px;
 }
 
 /* logoの書式 */
@@ -37,13 +40,13 @@
 /* header-main-textsとimageの親 */
 .header-main {
   display: flex;
-  padding-top:80px;
+  padding-top: 80px;
   justify-content: space-between;
 }
 
 /* header-main-textsの書式 */
 .header-main-texts {
-  width:400px;
+  width: 400px;
   /* 横幅を設定することで余白を生み、justify-contentがうまく動作するようにする */
   /* header-main-textsはFlex Itemになっていて、
   width:auto / flex-basis:autoなどによって中身を基準にサイズが決まっているので余白が埋まってしまうことがある */
@@ -69,7 +72,7 @@
 .header-main-button {
   background-color: #3882f6;
   color: #f9faf8;
-  border:0;
+  border: 0;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 2px;
@@ -83,3 +86,44 @@
   height: 300px;
 }
 
+/* ------------------------------------------- */
+/* information section */
+
+/* information全体の書式 */
+.information {
+  background-color: white;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-bottom: 62px;
+}
+
+/* information-titleの書式 */
+.information-title {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+  text-align: center;
+  margin: 28px;
+}
+
+/* information-imageの書式 */
+.information-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+/* information-textの書式 */
+.information-text {
+  width: 150px;
+  color: #3f4c5e;
+  text-align: center;
+}
+
+/* information-main-set-1,2,3,4の親 */
+.information-main {
+  display: flex;
+  justify-content: space-between;
+  /* 狭い画面になったときに入らない Flex Itemを次の行へ送る */
+  flex-wrap: wrap;
+}
