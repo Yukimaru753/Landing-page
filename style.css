@@ -1,29 +1,68 @@
 * {
-    box-sizing:border-box;
-    font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 .header-logo {
   font-size: 24px;
   font-weight: 600;
-  color: #F9FAF8;
-  margin-right:auto;
+  color: #f9faf8;
+  margin-right: auto;
 }
 
 .header-link {
-    text-decoration:none;
-    /* delete underline */
-    font-size:18px;
-    color:#E5E7EB;
-    margin-left:25px
+  text-decoration: none;
+  /* delete underline */
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-left: 25px;
 }
 
 /* header-topのflexbox */
 .header-top {
-    display:flex;
-    background-color:#1F2937;
-    padding-top:15px;
-    padding-right:120px;
-    padding-left:120px;
-    align-items:center;
+  display: flex;
+  background-color: #1f2937;
+  padding-top: 15px;
+  padding-right: 120px;
+  padding-left: 120px;
+  align-items: center;
+}
+
+.header-main-title {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+  margin: 0;
+}
+
+.header-main-subtext {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.header-main-button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.header-main-image {
+  width: 400px;
+}
+
+/* header-mainのflexbox */
+.header-main {
+  display: flex;
+  flex: 1;
+  background-color: #1f2937;
+  padding-right: 120px;
+  padding-left: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
