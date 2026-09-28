@@ -126,7 +126,6 @@
 .information-main {
   display: flex;
   justify-content: space-between;
-  /* 狭い画面になったときに入らない Flex Itemを次の行へ送る */
   flex-wrap: wrap;
 }
 
@@ -226,4 +225,63 @@
   padding-bottom: 36px;
   text-align: center;
   
+}
+
+/* ------------------------------------------- */
+/* レスポンシブ設定 */
+@media (max-width: 768px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header-main {
+    flex-direction: column;
+    padding-top: 46px;
+  }
+
+  .header-main-title {
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  .header-main-texts {
+    width:auto;
+  }
+
+  .header-main-button {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .header-main-image {
+    width:auto;
+  }
+
+  .information {
+    padding:0;
+  }
+
+  .quote {
+    padding-top:30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .call {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+  }
+
+  .call-main {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .call-button {
+    margin-top: 16px;
+  }
+
 }
